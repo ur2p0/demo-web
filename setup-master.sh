@@ -1,0 +1,5 @@
+#!/bin/bash
+#  Push SSH public key
+#
+# Push SSH Key for Root
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBIQPbNN1VHMI1xs6nS4IWcfjtrNOLq1qoPpfo+AqA9ARY9h9Ua89UXlylyM9gD3n4KLQPjMrtdONdL9GioQQBAIsZqdzDL1VV+zd7Fd0tyB48Jrd/v2SrPNB8La+RUmdLjha2ai8/5ZJPZ+Pst/85vOzFc1n4NcwD8uLxIboahhBaveAYj3qETfRUDSokqnDaefA3KgmeM/JGJWQmVhBRTHOOpczE+Y+IyeaST/CqMc7MxxIwkapJKqOmzmZZWiPdqKEk/33BmIzovqkcpmUgC+Gvh9bWxrJ5NxX0lROwWBi2ktO/ornt4GTbH4/XH8MATur/viYcVyiiMmaweeDLVF/HiXaz2uyG44uxH3BBh96nNHQ9HV16xk2IYPC/4+rbZWtxtQugHcFtBnfnuXrvc0gGqL13Dnc6wZwKyM6yJqGiQBZha8WlYlQUOPRBxVez6pt23xb7zsf2Ec1iqc2fP5Awm/soHEvBPYhfoOz5x8pgj2XBRBm8uwPBw+6hCVE= adrien@ILKI-C02FK0K4Q6LT-3.local" >> /root/.ssh/authorized_keys

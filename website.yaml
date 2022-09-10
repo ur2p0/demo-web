@@ -1,0 +1,16 @@
+---
+- name: Update web servers
+  hosts: website
+  remote_user: root
+#  vars:
+#    content: welcome to Ilki Webinar
+  tasks:
+  - name: Ensure nginx is at the latest version
+    apt:
+      name: nginx
+      state: latest
+      update_cache: yes
+#  - name: push website content
+#    get_url:
+#      content: https://raw.githubusercontent.com/ur2p0/demo-adirc/master/html/index.html
+#      dest: /var/www/html/index.html
