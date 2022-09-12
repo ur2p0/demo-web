@@ -10,7 +10,7 @@
       name: nginx
       state: latest
       update_cache: yes
-  - name: push website content
-    get_url:
-      url: https://raw.githubusercontent.com/ur2p0/demo-web/master/html/index.html
-      dest: /var/www/html/index.html
+  # - name: push website content
+  #   get_url:
+  #     url: https://raw.githubusercontent.com/ur2p0/demo-web/master/html/index.html
+  #     dest: /var/www/html/index.html
