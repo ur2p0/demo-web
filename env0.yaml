@@ -11,4 +11,4 @@ deploy:
         - ls -all
         - terraform output -raw public_ip_website >> inventory
         - chmod 600 .ssh/key.pem
-        - ansible-playbook -i inventory --private-key .ssh/key.pem --ssh-common-args='-F .ssh/config' --extra-vars "@vars.yaml" website.yaml
+        - ansible-playbook -i inventory --private-key .ssh/key.pem --ssh-common-args='-F .ssh/config' website.yaml
