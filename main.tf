@@ -19,11 +19,11 @@ resource "scaleway_instance_security_group" "sg" {
 }
 
 resource "scaleway_vpc_private_network" "network" {
-  name = "${var.name}-private_network"
+  name = "${var.type}-private_network"
 }
 
 resource "scaleway_instance_server" "website" {
-  name  = "${var.name}-web"
+  name  = "${var.type}-web"
   type  = "DEV1-S"
   image = "ubuntu_focal"
   ip_id = scaleway_instance_ip.public_ip.id
