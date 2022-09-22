@@ -12,10 +12,10 @@ resource "scaleway_instance_security_group" "sg" {
   }
 
 ## TO COMMENT
-  # inbound_rule {
-  #   action = "accept"
-  #   port   = 80
-  # }
+  inbound_rule {
+    action = "accept"
+    port   = 80
+  }
 }
 
 resource "scaleway_vpc_private_network" "network" {
