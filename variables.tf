@@ -1,4 +1,4 @@
-variable "srv-type" {
+variable "type" {
   type    = string
   default = "srv"
 }
