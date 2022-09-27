@@ -11,11 +11,11 @@ resource "scaleway_instance_security_group" "sg" {
     port   = 22
   }
 
-## TO COMMENT
+# ## TO COMMENT
   inbound_rule {
     action = "accept"
     port   = 80
-  }
+ }
 }
 
 resource "scaleway_vpc_private_network" "network" {
@@ -29,7 +29,6 @@ resource "scaleway_instance_server" "website" {
   ip_id = scaleway_instance_ip.public_ip.id
   tags  = ["DEMO", "LABS", "ADRIEN"]
   user_data = {
-    docker     = "installed"
     cloud-init = file("setup-master.sh")
   }
   private_network {
